@@ -14,6 +14,8 @@
 		E5F7DFF32104C9BB00D030D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F7DFF12104C9BB00D030D5 /* LaunchScreen.storyboard */; };
 		E5F7DFFE2104C9BB00D030D5 /* FontViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F7DFFD2104C9BB00D030D5 /* FontViewerTests.swift */; };
 		E5F7E0092104C9BB00D030D5 /* FontViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F7E0082104C9BB00D030D5 /* FontViewerUITests.swift */; };
+		E5F7E0192104D4D000D030D5 /* FontCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F7E0182104D4D000D030D5 /* FontCollectionViewController.swift */; };
+		E5F7E01B2104DC4D00D030D5 /* FontCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F7E01A2104DC4D00D030D5 /* FontCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E5F7E0042104C9BB00D030D5 /* FontViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F7E0082104C9BB00D030D5 /* FontViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewerUITests.swift; sourceTree = "<group>"; };
 		E5F7E00A2104C9BB00D030D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5F7E0182104D4D000D030D5 /* FontCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontCollectionViewController.swift; sourceTree = "<group>"; };
+		E5F7E01A2104DC4D00D030D5 /* FontCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				E5F7DFE82104C9B500D030D5 /* AppDelegate.swift */,
 				E5F7DFEA2104C9B500D030D5 /* ViewController.swift */,
+				E5F7E01A2104DC4D00D030D5 /* FontCollectionViewCell.swift */,
+				E5F7E0182104D4D000D030D5 /* FontCollectionViewController.swift */,
 				E5F7DFEC2104C9B500D030D5 /* Main.storyboard */,
 				E5F7DFEF2104C9BB00D030D5 /* Assets.xcassets */,
 				E5F7DFF12104C9BB00D030D5 /* LaunchScreen.storyboard */,
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F7E0192104D4D000D030D5 /* FontCollectionViewController.swift in Sources */,
+				E5F7E01B2104DC4D00D030D5 /* FontCollectionViewCell.swift in Sources */,
 				E5F7DFEB2104C9B500D030D5 /* ViewController.swift in Sources */,
 				E5F7DFE92104C9B500D030D5 /* AppDelegate.swift in Sources */,
 			);
