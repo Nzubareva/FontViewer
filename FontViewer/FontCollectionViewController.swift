@@ -20,7 +20,7 @@ class FontCollectionViewController: UICollectionViewController, UICollectionView
         UIFont.familyNames.forEach({familyName in
             fontNames.append(contentsOf: UIFont.fontNames(forFamilyName: familyName))
         })
-        fontNames.forEach({print($0)})
+        //fontNames.forEach({print($0)})
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,6 +58,7 @@ class FontCollectionViewController: UICollectionViewController, UICollectionView
         let font = UIFont(name: fontNames[indexPath.row], size: 20.0)
         cell.titleLabel.text = font?.familyName
         cell.descriptionLabel.text = "\(font!.fontName)"
+        cell.cellFont = font
         //font?.style
         return cell
     }
@@ -100,5 +101,13 @@ class FontCollectionViewController: UICollectionViewController, UICollectionView
         let height = UIScreen.main.bounds.size.height / 4.2
         return CGSize(width: width, height: height)
     }
-
+    
+    // MARK: segue handling
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "fontDetailsSegue" {
+            let dest = segue.destination as! ViewController
+            let cell = sender as! FontCollectionViewCell
+            dest.font = cell.cellFont
+        }
+    }
 }

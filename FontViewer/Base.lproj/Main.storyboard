@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15" y="-342"/>
+            <point key="canvasLocation" x="1636" y="-1263"/>
         </scene>
         <!--Font Collection View Controller-->
         <scene sceneID="ndI-Xa-8nO">
@@ -66,6 +66,7 @@
                                 <connections>
                                     <outlet property="descriptionLabel" destination="46c-YU-So5" id="Szs-6Z-jTi"/>
                                     <outlet property="titleLabel" destination="SeB-ux-QoL" id="4KV-Ob-AI0"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="fontDetailsSegue" id="VbI-Z8-2p5"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -78,7 +79,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1D-TB-Nk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="869.60000000000002" y="-1263.4182908545729"/>
+            <point key="canvasLocation" x="828" y="-1263"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jxu-Cm-eSC">
