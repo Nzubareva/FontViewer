@@ -57,7 +57,10 @@ class FontCollectionViewController: UICollectionViewController, UICollectionView
         // Configure the cell
         let font = UIFont(name: fontNames[indexPath.row], size: 20.0)
         cell.titleLabel.text = font?.familyName
+        cell.titleLabel.font = font
+        cell.titleLabel.adjustsFontSizeToFitWidth = true
         cell.descriptionLabel.text = "\(font!.fontName)"
+        cell.descriptionLabel.adjustsFontSizeToFitWidth = true
         cell.cellFont = font
         //font?.style
         return cell
@@ -97,8 +100,8 @@ class FontCollectionViewController: UICollectionViewController, UICollectionView
     
     // MARK: UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.size.width / 2.2
-        let height = UIScreen.main.bounds.size.height / 4.2
+        let width = (self.view.bounds.size.width-20) / 2
+        let height = (self.view.bounds.size.height-80) / 4
         return CGSize(width: width, height: height)
     }
     
