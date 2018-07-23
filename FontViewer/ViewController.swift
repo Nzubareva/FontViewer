@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var fontFamily: UILabel!
+    @IBOutlet weak var fontName: UILabel!
+    @IBOutlet weak var example: UILabel!
+    @IBOutlet weak var height: UILabel!
     var font: UIFont!
 
     override func viewDidLoad() {
@@ -23,7 +27,11 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("\(font.fontName)")
+        fontFamily.text = font.familyName
+        fontName.text = font.fontName
+        example.font = font.withSize(17)
+        example.text = "Example"
+        height.text = "\(example.font.pointSize)"
     }
 
 }
